@@ -60,9 +60,9 @@ export default function SettingsDrawer() {
 
   return (
     <>
-      {!open && <ToggleButton open={open} notDefault={notDefault} onToggle={handleToggle} />}
+      {/* {!open && <ToggleButton open={open} notDefault={notDefault} onToggle={handleToggle} />} */}
 
-      <Drawer
+      {/* <Drawer
         anchor="right"
         open={open}
         onClose={handleClose}
@@ -133,7 +133,7 @@ export default function SettingsDrawer() {
         <Box sx={{ p: SPACING, pt: 0 }}>
           <FullScreenOptions />
         </Box>
-      </Drawer>
+      </Drawer> */}
     </>
   );
 }

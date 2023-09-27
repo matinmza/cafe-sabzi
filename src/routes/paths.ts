@@ -32,6 +32,9 @@ export const PATH_PAGE = {
   page404: '/404',
   page500: '/500',
   components: '/components',
+  cafe: '/#fast-foods',
+  qelion: '/#qelion',
+  drinks: '/#drinks',
 };
 
 export const PATH_DASHBOARD = {

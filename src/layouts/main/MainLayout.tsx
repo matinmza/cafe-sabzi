@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { Box } from '@mui/material';
 //
 const Header = dynamic(() => import('./Header'), { ssr: false });
-const Footer = dynamic(() => import('./Footer'), { ssr: false });
+// const Footer = dynamic(() => import('./Footer'), { ssr: false });
 
 // ----------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ export default function MainLayout({ children }: Props) {
         {children}
       </Box>
 
-      <Footer />
+      {/* <Footer /> */}
     </Box>
   );
 }

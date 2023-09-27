@@ -1,4 +1,5 @@
 import { Public_Sans, Barlow } from '@next/font/google';
+import localFont from '@next/font/local';
 
 // ----------------------------------------------------------------------
 
@@ -24,18 +25,49 @@ export function responsiveFontSizes({ sm, md, lg }: { sm: number; md: number; lg
   };
 }
 
-export const primaryFont = Public_Sans({
-  weight: ['400', '500', '600', '700', '800'],
-  subsets: ['latin'],
-  display: 'swap',
-  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+// export const primaryFont = Public_Sans({
+//   weight: ['400', '500', '600', '700', '800'],
+//   subsets: ['latin'],
+//   display: 'swap',
+//   fallback: ['iranYekan'],
+// });
+
+export const primaryFont = localFont({
+  src: [
+    {
+      path: '../assets/font/iran-yekan/woff/iranyekanwebmediumfanum.woff',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../assets/font/iran-yekan/woff/iranyekanwebregularfanum.woff',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/font/iran-yekan/woff/iranyekanwebthinfanum.woff',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../assets/font/iran-yekan/woff/iranyekanwebboldfanum.woff',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../assets/font/iran-yekan/woff/iranyekanwebextraboldfanum.woff',
+      weight: '800',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-yekan',
 });
 
 export const secondaryFont = Barlow({
   weight: ['900'],
   subsets: ['latin'],
   display: 'swap',
-  fallback: ['Helvetica', 'Arial', 'sans-serif'],
+  fallback: ['iranYekan'],
 });
 
 // ----------------------------------------------------------------------
